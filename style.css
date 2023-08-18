@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+	margin: 0;
+}
+
+body {
+	font-family: 'Nunito', sans-serif;
+	background-color: #EA5959;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	padding: 32px;
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.todo {
+	padding: 32px;
+	background-color: white;
+	width: 50%;
+	min-height: 10%;
+	border-radius: 16px;
+}
+
+.todo-new-task {
+	display: flex;
+	margin: 16px 0 32px;
+	width: 100%;
+}
+
+.todo__input {
+	width: 70%;
+	margin-right: 16px;
+	font-size: 18px;
+	padding: 8px 16px;
+	border: 1px solid black;
+	border-radius: 20px;
+	flex-grow: 1;
+	appearance: none;
+	background: none;
+	outline: none;
+}
+
+.todo__submit_add {
+	color: black;
+	font-size: 18px;
+	font-weight: 700;
+	cursor: pointer;
+	border: none;
+	background: none;
+	transition: 0.4s;
+	padding: 8px 16px;
+	width: 30%;
+}
+
+.todo__submit_add:hover {
+	opacity: 0.5;
+	color: red;
+}
+
+.todo__submit_add:active {
+	opacity: 0.1;
+}
+
+.todo__list {
+	display: flex;
+	padding: 10px 10px;
+	align-items: center;
+	border-radius: 20px;
+	border: 1px solid black;
+	margin-bottom: 25px;
+}
+
+.todo__delete {
+	cursor: pointer;
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: 700;
+	transition: 0.3s;
+	color: black;
+}
+
+.todo__edit {
+	cursor: pointer;
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: 700;
+	transition: 0.3s;
+	color: black;
+}
+
+.todo__actions {
+	margin-left: auto;	
+}
+
+.todo__task {
+	width: 69%;
+}
+
+.todo__edit:hover, .todo__delete:hover {
+	opacity: 0.5;
+	color: red;
+}
+
+.todo__edit:active, .todo__delete:active {
+	opacity: 0.1;
+}
+
+.todo__input-task {
+	word-wrap: break-word;
+	width: 100%;
+	height: 100%;
+	border: none;
+	margin-top: 0;
+	outline: none;
+	appearance: none;
+	background: none;
+	overflow: hidden;
+	
+}
+
+.todo__checkbox {
+	display: flex;
+}
+
+.todo__input-task {
+	margin-left: 10px;
+}
+
